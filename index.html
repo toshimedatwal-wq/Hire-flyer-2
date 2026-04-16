@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Napa Valley Executive Retreat — Bifold (8.5 × 5.5 in)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: 8.5in 5.5in; margin: 0; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --cream:#ECE2C9;
+    --cream-2:#E6DBBF;
+    --bronze:#A38555;
+    --bronze-2:#8D7044;
+    --ink:#2B2720;
+    --ink-soft:#453f33;
+    --muted:#8A7F66;
+    --line:#cdbd97;
+    --line-soft:#d9caa6;
+  }
+  html,body{background:#d8cfb8;font-family:'Cormorant Garamond',Georgia,serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  body{padding:40px 20px}
+  .wrap{max-width:880px;margin:0 auto}
+  .label{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.22em;color:var(--bronze-2);font-weight:700;text-transform:uppercase;margin:28px 0 10px}
+  .page{
+    width:8.5in;height:5.5in;background:var(--cream);
+    background-image:
+      radial-gradient(1400px 900px at 50% 50%, rgba(255,255,255,.35), transparent 70%),
+      radial-gradient(800px 500px at 10% 10%, rgba(163,133,85,.06), transparent 60%);
+    box-shadow:0 18px 50px rgba(0,0,0,.15);
+    border-radius:2px;overflow:hidden;position:relative;
+    page-break-after:always;
+  }
+  .sans{font-family:'Inter',sans-serif}
+  .tag{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.28em;color:var(--bronze);text-transform:uppercase}
+  .tag-ink{color:var(--ink)}
+  .italic{font-style:italic;color:var(--bronze)}
+  .hr{height:1px;background:var(--line);border:0}
+  .dash{display:inline-block;width:20px;height:2px;background:var(--bronze);vertical-align:middle}
+
+  /* ---------- PAGE 1 — COVER ---------- */
+  .p1{padding:.34in .5in;display:flex;flex-direction:column}
+  .p1-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .p1-top .side{display:flex;align-items:center;gap:10px}
+  .p1-center{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .date-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .date-row .tag{font-size:11px;letter-spacing:.32em}
+  .p1 h1{font-size:84px;line-height:1;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+  .p1 .subh{font-size:32px;font-style:italic;color:var(--bronze);font-weight:400;margin-top:4px;letter-spacing:.005em}
+  .p1 .mini-rule{width:48px;height:1.5px;background:var(--bronze);margin:18px auto 16px;border:0}
+  .p1 .quote{font-style:italic;color:var(--ink-soft);font-size:15px;line-height:1.55;max-width:4.8in;margin-bottom:18px}
+  .pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--bronze);border-radius:50px;padding:9px 26px;font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.28em;color:var(--bronze);text-transform:uppercase}
+  .pill::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--bronze)}
+  .p1-bot{display:flex;justify-content:space-between;align-items:flex-end;padding-top:10px;border-top:1px solid var(--line)}
+  .p1-bot .block{max-width:3in}
+  .p1-bot .lbl{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:.28em;font-weight:700;color:var(--bronze);text-transform:uppercase;margin-bottom:4px}
+  .p1-bot .val{font-size:15px;color:var(--ink);font-weight:400}
+  .p1-bot .right{text-align:right}
+
+  /* ---------- PAGE 2 — THE RETREAT ---------- */
+  .p2{padding:.42in .5in;display:flex;flex-direction:column}
+  .p2 .hd{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .p2 h2{font-size:36px;line-height:1.08;font-weight:500;color:var(--ink);letter-spacing:-.005em}
+  .p2 h2 em{display:block;font-style:italic;color:var(--bronze);font-weight:400}
+  .p2 .lede{font-style:italic;color:var(--muted);font-size:13px;line-height:1.55;max-width:6.4in;margin-top:10px;margin-bottom:22px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:38px}
+  .col h3{font-size:20px;color:var(--ink);font-weight:500;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .list{list-style:none}
+  .list li{display:grid;grid-template-columns:34px 1fr;gap:6px;padding:10px 2px;border-bottom:1px solid var(--line-soft);align-items:baseline}
+  .list li:last-child{border-bottom:0}
+  .list .num{font-family:'Inter',sans-serif;font-style:italic;font-size:10px;letter-spacing:.08em;color:var(--bronze);text-transform:uppercase;font-weight:500}
+  .list .txt{font-size:13px;color:var(--ink);line-height:1.4}
+
+  /* ---------- PAGE 3 — THE AGENDA ---------- */
+  .p3{padding:.42in .5in;display:flex;flex-direction:column}
+  .p3 .hd{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .p3 h2{font-size:42px;line-height:1.08;font-weight:500;color:var(--ink);letter-spacing:-.005em}
+  .p3 h2 em{font-style:italic;color:var(--bronze);font-weight:400}
+  .p3 .lede{font-style:italic;color:var(--muted);font-size:13px;line-height:1.55;margin-top:8px;margin-bottom:16px}
+  .agenda{border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.18);padding:18px 22px;flex:1;display:flex;flex-direction:column;justify-content:center}
+  .arow{display:grid;grid-template-columns:2.1in 1fr;gap:28px;padding:14px 6px;border-bottom:1px solid var(--line-soft);align-items:center}
+  .arow:last-of-type{border-bottom:0}
+  .arow .day{display:flex;align-items:center;gap:14px}
+  .arow .dot{width:8px;height:8px;border-radius:50%;background:var(--bronze);flex-shrink:0;box-shadow:0 0 0 2px var(--cream), 0 0 0 3px var(--bronze)}
+  .arow .daybox{line-height:1}
+  .arow .wk{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.28em;font-weight:700;color:var(--bronze);text-transform:uppercase;margin-bottom:4px;display:block}
+  .arow .date{display:flex;align-items:baseline;gap:2px}
+  .arow .date .sept{font-style:italic;font-size:18px;color:var(--ink);font-weight:400}
+  .arow .date .num{font-size:46px;color:var(--ink);font-weight:500;letter-spacing:-.02em}
+  .arow .desc{font-size:14px;color:var(--ink);line-height:1.5}
+  .arow .desc em{font-style:italic;color:var(--muted);font-weight:400}
+  .arow .desc .sep{color:var(--bronze);margin:0 6px;font-weight:700}
+  .p3 .foot{text-align:center;font-style:italic;color:var(--muted);font-size:12px;margin-top:12px}
+
+  /* ---------- PAGE 4 — BACK COVER ---------- */
+  .p4{padding:.34in .5in .28in;display:flex;flex-direction:column}
+  .p4-top{text-align:center;margin-bottom:12px}
+  .p4-top h2{font-size:30px;line-height:1.15;font-weight:500;color:var(--ink);letter-spacing:-.005em}
+  .p4-top h2 em{font-style:italic;color:var(--bronze);font-weight:400}
+  .p4-top .lede{font-style:italic;color:var(--muted);font-size:12px;line-height:1.5;max-width:4.6in;margin:8px auto 0}
+  .imgbox{position:relative;border-radius:4px;overflow:hidden;border:1px solid var(--line);margin:10px 0 12px;height:1.55in;display:flex;align-items:flex-end;justify-content:center;background:#8a6f45}
+  .imgbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .imgbox::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.28) 100%);pointer-events:none}
+  .req-btn{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:var(--bronze);color:#fff;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.28em;font-weight:700;text-transform:uppercase;padding:10px 22px;border-radius:1px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 6px 16px rgba(0,0,0,.18)}
+  .hosts-lbl{display:flex;align-items:center;justify-content:center;gap:10px;margin:4px 0 8px}
+  .hosts{display:grid;grid-template-columns:1fr 1fr;gap:40px;text-align:center;margin-bottom:10px}
+  .host .nm{font-size:22px;color:var(--ink);font-weight:500;line-height:1.15}
+  .host .nm em{font-style:italic;color:var(--bronze);font-weight:400;font-size:14px;margin-left:4px}
+  .host .tt{font-style:italic;color:var(--muted);font-size:12px;margin-top:2px}
+  .p4 .divider{height:1px;background:var(--line);margin:6px 0 8px}
+  .p4 .quote{text-align:center;font-style:italic;color:var(--ink-soft);font-size:12.5px;line-height:1.5;max-width:6.2in;margin:0 auto 10px}
+  .p4 .quote .hl{color:var(--bronze);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+  .p4 .foot{display:flex;justify-content:space-between;align-items:center;padding-top:6px;border-top:1px solid var(--line)}
+  .p4 .foot .c{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:.26em;font-weight:600;color:var(--muted);text-transform:uppercase}
+  .p4 .foot .e{font-style:italic;color:var(--bronze);font-size:12px;text-decoration:underline;text-decoration-color:var(--line)}
+
+  @media print{
+    body{background:#fff;padding:0}
+    .label{display:none}
+    .page{box-shadow:none;border-radius:0;margin:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= PAGE 1 — COVER ================= -->
+  <div class="label">Page 1 · Front Cover</div>
+  <div class="page p1">
+    <div class="p1-top">
+      <div class="side"><span class="dash"></span><span class="tag">Gerson Advisory · HireNetix</span></div>
+      <div class="side"><span class="tag">MMXXV · California</span></div>
+    </div>
+    <div class="p1-center">
+      <div class="date-row"><span class="dash"></span><span class="tag">September 9 — 11, 2025</span><span class="dash"></span></div>
+      <h1>Napa Valley</h1>
+      <div class="subh">An Executive Retreat</div>
+      <hr class="mini-rule">
+      <div class="quote">A closed-door working session for franchise leaders committed to the<br>economics that matter most.</div>
+      <div class="pill">By Invitation Only · 25 Leaders</div>
+    </div>
+    <div class="p1-bot">
+      <div class="block">
+        <div class="lbl">Presented By</div>
+        <div class="val">Gerson Advisory <em class="italic">&amp;</em> HireNetix</div>
+      </div>
+      <div class="block right">
+        <div class="lbl">Location</div>
+        <div class="val">Napa Valley, <em style="font-style:italic;color:var(--ink-soft)">California</em></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PAGE 2 — THE RETREAT ================= -->
+  <div class="label">Page 2 · The Retreat</div>
+  <div class="page p2">
+    <div class="hd"><span class="dash"></span><span class="tag">The Retreat</span></div>
+    <h2>Not a conference.<em>A room that changes the trajectory.</em></h2>
+    <div class="lede">Over three days in Napa Valley, CEOs and senior franchise leaders will exchange ideas, challenge assumptions, and leave with clear, actionable strategies to strengthen unit-level results.</div>
+    <div class="cols">
+      <div class="col">
+        <h3>What this solves</h3>
+        <ul class="list">
+          <li><span class="num">I.</span><span class="txt">Inconsistent franchisee performance across markets</span></li>
+          <li><span class="num">II.</span><span class="txt">Difficulty recruiting multi-unit operators</span></li>
+          <li><span class="num">III.</span><span class="txt">Underutilized data, dashboards &amp; AI insights</span></li>
+          <li><span class="num">IV.</span><span class="txt">Weak accountability and coaching structures</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>What you'll leave with</h3>
+        <ul class="list">
+          <li><span class="num">I.</span><span class="txt">A framework for improving unit-level profitability</span></li>
+          <li><span class="num">II.</span><span class="txt">AI-powered dashboard strategies for real-time decisions</span></li>
+          <li><span class="num">III.</span><span class="txt">Playbooks to recruit your ideal franchisee avatar</span></li>
+          <li><span class="num">IV.</span><span class="txt">Peer accountability models that drive measurable results</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PAGE 3 — THE AGENDA ================= -->
+  <div class="label">Page 3 · The Agenda</div>
+  <div class="page p3">
+    <div class="hd"><span class="dash"></span><span class="tag">The Agenda</span></div>
+    <h2><em>Roundtables.</em> Strategy workshops. <em>Peer exchange.</em></h2>
+    <div class="lede">A carefully curated three-day cadence — for depth, for Napa, for connection.</div>
+    <div class="agenda">
+      <div class="arow">
+        <div class="day">
+          <span class="dot"></span>
+          <div class="daybox">
+            <span class="wk">Tuesday</span>
+            <div class="date"><span class="sept">Sept</span><span class="num">9</span></div>
+          </div>
+        </div>
+        <div class="desc">Arrival <span class="sep">&amp;</span> <em>private welcome gathering</em></div>
+      </div>
+      <div class="arow">
+        <div class="day">
+          <span class="dot"></span>
+          <div class="daybox">
+            <span class="wk">Wednesday</span>
+            <div class="date"><span class="sept">Sept</span><span class="num">10</span></div>
+          </div>
+        </div>
+        <div class="desc">Morning executive roundtables <span class="sep">·</span> Afternoon <em>curated Napa experiences</em> <span class="sep">·</span> Evening private dinner</div>
+      </div>
+      <div class="arow">
+        <div class="day">
+          <span class="dot"></span>
+          <div class="daybox">
+            <span class="wk">Thursday</span>
+            <div class="date"><span class="sept">Sept</span><span class="num">11</span></div>
+          </div>
+        </div>
+        <div class="desc">Strategy sessions &amp; action planning <span class="sep">·</span> <em>Optional wine tour &amp; closing lunch</em></div>
+      </div>
+    </div>
+    <div class="foot">Twenty-five leaders. Three days. One room.</div>
+  </div>
+
+  <!-- ================= PAGE 4 — BACK COVER ================= -->
+  <div class="label">Page 4 · Back Cover</div>
+  <div class="page p4">
+    <div class="p4-top">
+      <h2>A curated room — <em>not an open registration event.</em></h2>
+      <div class="lede">Attendance is limited to 25 franchise CEOs and senior leaders. If improving unit economics is a<br>priority, we invite you to express interest.</div>
+    </div>
+    <div class="imgbox">
+      <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1800&q=80&auto=format&fit=crop" alt="Napa Valley vineyard">
+      <div class="req-btn">Request an Invitation <span>&rarr;</span></div>
+    </div>
+    <div class="hosts-lbl"><span class="dash"></span><span class="tag">Your Hosts</span><span class="dash"></span></div>
+    <div class="hosts">
+      <div class="host">
+        <div class="nm">Keith Gerson,<em>CFE</em></div>
+        <div class="tt">Founder, Gerson Advisory Services</div>
+      </div>
+      <div class="host">
+        <div class="nm">Amit Pamecha,<em>CFE</em></div>
+        <div class="tt">Founder, FranConnect · Chairman, HireNetix</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="quote">The brands that win won't grow the fastest — they'll build the <span class="hl">strongest unit economics</span> <em>and the</em> <span class="hl">most capable franchisees.</span></div>
+    <div class="foot">
+      <div class="c">© 2025 Gerson Advisory Services · HireNetix</div>
+      <div class="e">napavalleyretreat@hirenetix.ai</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
